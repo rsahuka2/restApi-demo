@@ -1,3 +1,23 @@
 spring:
   application:
     name: restApi-demo
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_vendor?useSSL=false
+    username: root
+    password: root
+
+  jpa.hibernate.ddl_auto: create
+
+#/*
+#Steps:
+#  1. intalled sql work bench
+#  2. installed {https://dev.mysql.com/downloads/installer/} downloaded my sql installed for windows
+#  3. added sql workbench , shell,routes, documentation..... of all recent version
+#  4. finaly mysql server started i.e mysql shell
+#  5. started a connection in sql workbench with connname: local Instance 3036
+#  6. aftre sucessful connection , double clicked on "local Instance 3036" conn
+#  7. created a schema called: "cloud_vendor"
+#  8.my useranem and pass are "root" - which i gave while installing
+#  9. in this way connection established and my app connected to workbench.
+#*/

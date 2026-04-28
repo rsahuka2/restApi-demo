@@ -1,6 +1,15 @@
 package com.myFirstSBProject.restApi_demo.model;
 
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="cloud_vendor_info")
+//this entity referes to a table that get created in mysql db with foll properties like vendor_id,vendoe_name....
 public class CloudVendor {
+    @Id
     private String vendorId;
     private String vendorname;
     private String vendorAddress;
